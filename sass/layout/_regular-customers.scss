@@ -3,11 +3,11 @@
   text-align: center;
   color: var(--header-links-title-text-color);
 }
-.regular-customers-list {
+.customers {
   margin-top: 50px;
   display: flex;
 }
-.regular-customers-item {
+.customers__item {
   & + & {
     margin-left: 30px;
   }
@@ -15,7 +15,7 @@
   height: 92px;
 }
 
-.regular-customers-link {
+.customers__link {
   border: 1px solid var(--icons-socisls-color);
   border-radius: 4px;
   justify-content: center;
@@ -32,13 +32,13 @@
     border-color: var(--accent-color);
   }
 }
-.customers-icons {
+.customers__icons {
   fill: var(--icons-socisls-color);
   transition: fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .regular-customers-link:hover &,
-  .regular-customers-link:focus &,
-  .regular-customers-link:active & {
+  .customers__link:hover &,
+  .customers__link:focus &,
+  .customers__link:active & {
     fill: var(--accent-color);
   }
 }

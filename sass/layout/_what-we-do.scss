@@ -1,16 +1,16 @@
-.production-section {
+.section--nopaddigtop {
   padding-top: 0;
 }
-.production-section__title {
+.section__title {
   margin-bottom: 50px;
   @include text-font(null, 36px, 1.16, 0.03em);
   text-align: center;
   color: var(--header-links-title-text-color);
 }
-.production-section__list {
+.production {
   display: flex;
 }
-.what-do-thumb {
+.production__thumb {
   position: relative;
 }
 .paragraf-container {
@@ -24,13 +24,15 @@
   position: absolute;
   background: rgba(47, 48, 58, 0.8);
 }
-.production-section__item {
+.production__item {
   & + & {
     margin-left: 30px;
   }
 }
-.production-section__posttitle {
-  @include text-font(null, 14px, 1.14, 0.03em);
+.production__posttitle {
+  @include text-font(700, 14px, 1.14, 0.03em);
+  text-align: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
   color: var(--hero-text-color);
