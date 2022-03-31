@@ -1,0 +1,46 @@
+.advantages-icons-list {
+  display: flex;
+  justify-content: center;
+}
+// .checkbox-container {
+//   margin-top: 20px;
+// }
+.section__list {
+  display: flex;
+}
+.advantages-item-icon {
+  width: 270px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--icons-background-color);
+}
+.avantages-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--icons-background-color);
+  border-radius: 4px;
+  height: 120px;
+}
+.advantages-item-icon:not(:first-child) {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+.section__item {
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.section__title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  @include text-font(null, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--header-links-title-text-color);
+}
+.section__posttitle {
+  @include text-font(null, 14px, 1.71, 0.03em);
+  color: var(--primary-text-color);
+}

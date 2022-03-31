@@ -1,0 +1,17 @@
+.link-logo {
+  color: #2196f3;
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-upper {
+  @extend .link-logo;
+  color: #000000;
+}
+
+.logo-down {
+  @extend .link-logo;
+  color: #ffffff;
+}
