@@ -1,18 +1,27 @@
 .regular-customers-title {
-  @include text-font(null, 36px, 1.16, 0.03em);
+  @include text-font(700, 28px, 1.17, 0.03em);
+  // @include text-font(null, 36px, 1.16, 0.03em);
   text-align: center;
   color: var(--header-links-title-text-color);
 }
+
 .customers {
-  margin-top: 50px;
+  margin-top: 30px;
+  // margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
 }
 .customers__item {
-  & + & {
-    margin-left: 30px;
-  }
-  width: 170px;
-  height: 92px;
+  // & + & {
+  //   margin-left: 30px;
+  // }
+  // width: 170px;
+  // height: 92px;
+  width: calc(100% / 2 - 30px);
+  justify-content: space-between;
+  margin-left: 30px;
+  // margin-left: 30px;
+  // margin-top: 30px;
 }
 
 .customers__link {

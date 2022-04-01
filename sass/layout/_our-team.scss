@@ -2,26 +2,41 @@
   background-color: var(--icons-background-color);
 }
 .section__title {
-  margin-bottom: 50px;
-  @include text-font(null, 36px, 1.16, 0.03em);
+  // margin-bottom: 50px;
+  margin-bottom: 30px;
+  @include text-font(700, 28px, 1.17, 0.03em);
+  // @include text-font(null, 36px, 1.16, 0.03em);
   text-align: center;
   color: var(--header-links-title-text-color);
 }
+
 .team {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .team__item {
+  &+& {
+    margin-top: 30px;
+  }
   background: var(--hero-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    
   }
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 .team__container {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+  // padding-bottom: 30px;
 }
 .team__title {
   @include text-font(null, 16px, 1.18, 0.03em);
