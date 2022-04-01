@@ -1,15 +1,15 @@
-.bottons-list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.btns-item {
+.filter__item {
   & + & {
     margin-left: 8px;
   }
 }
-.btn-portfolio {
+.filter__btn {
   background-color: var(--icons-background-color);
   padding: 6px 22px 6px 22px;
   border: none;
@@ -37,30 +37,40 @@
   }
 }
 
-.projects-list {
+.cards {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
   flex-wrap: wrap;
 }
-.projects-item {
+.cards__item {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
   transition: color 250ms;
 }
+.cards__link {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.image {
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.cards__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.cards__img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.projects-thump {
-  position: relative;
-  overflow: hidden;
-}
 
-.project-description {
+.cards__description {
   top: 0;
   left: 0;
   width: 100%;
@@ -73,33 +83,24 @@
   transform: translateY(100%);
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .projects-link:hover &,
-  .projects-link:focus & {
+  .cards__link:hover &,
+  .cards__link:focus & {
     transform: translateY(0);
   }
 }
-.title-container {
+.cards__container {
   padding: 20px 24px 20px 24px;
   border-right: 1px solid var(--border-cards-color);
   border-bottom: 1px solid var(--border-cards-color);
   border-left: 1px solid var(--border-cards-color);
 }
-.projects-link {
-  display: block;
-  text-decoration: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-}
-.projects-title {
+
+.cards__title {
   margin-bottom: 4px;
-  @include text-font(null, 18px, 2, 0.06em);
+  @include text-font(700, 18px, 2, 0.06em);
   color: var(--header-links-title-text-color);
 }
-.projects-posttitle {
-  @include text-font(null, 16px, 1.87, 0.03em);
+.cards__posttitle {
+  @include text-font(400, 16px, 1.87, 0.03em);
   color: var(--primary-text-color);
 }
