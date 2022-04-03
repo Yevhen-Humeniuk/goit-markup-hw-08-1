@@ -1,9 +1,11 @@
 .section--nopaddigtop {
   display: none;
   padding-top: 0;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .section__title {
-  margin-bottom: 50px;
   @include text-font(null, 36px, 1.16, 0.03em);
   text-align: center;
   color: var(--header-links-title-text-color);
