@@ -1,55 +1,43 @@
-// .advantages-icons-list {
-//   display: flex;
-//   justify-content: center;
-// }
-// .checkbox-container {
-//   margin-top: 20px;
-// }
-.avantages {
+.advantages {
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: -30px;
-    margin-left: -30px;
-
-    @media screen and (min-width: 1200px) {
-      display: flex;
-    }
-}
-}
-.avantages__item {
-  & + & {
-    margin-top: 30px;
+    // margin-bottom: -30px;
   }
+}
+
+.advantages__item {
+  margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
-    &:nth-last-of-type(3) {
-      margin-top: 0;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: calc(100% / 4 - 30px);
-      margin-top: 30px;
-      
-      &:nth-last-of-type(3) {
-        margin-top: 30px;}
-      
+    &:nth-last-of-type(1),
+    &:nth-last-of-type(2) {
+      margin-bottom: 0;
     }
   }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+    margin-bottom: 0;
+  }
 }
-.avantages__box {
+
+.advantages__box {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--icons-background-color);
   border-radius: 4px;
   height: 120px;
   width: 270px;
+
   @media screen and (min-width: 768px) {
     justify-content: center;
     align-items: center;
   }
 }
+
 .advantages__icon {
   width: 270px;
   height: 120px;
@@ -58,15 +46,16 @@
   background-color: var(--icons-background-color);
 }
 
-.avantages__title {
+.advantages__title {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
-  @include text-font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--header-links-title-text-color);
+  @include text-font(700, 14px, 1.14, 0.03em);
 }
-.avantages__posttitle {
-  @include text-font(400, 14px, 1.71, 0.03em);
+
+.advantages__posttitle {
   color: var(--primary-text-color);
+  @include text-font(400, 14px, 1.71, 0.03em);
 }
