@@ -9,8 +9,12 @@
   display: flex;
 }
 .navigation__list {
-  margin-left: 93px;
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    margin-left: 93px;
+    display: flex;
+  }
+  
 }
 .navigation__item {
   & + & {
@@ -32,9 +36,19 @@
   }
 }
 .contacts {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 84px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: 1200px) {
   align-items: center;
   display: flex;
   margin-left: auto;
+}
+
   &:hover,
   &:focus,
   &:active {
@@ -42,9 +56,14 @@
   }
 }
 .contacts__item--mail {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  margin-right: 30px;
 }
-
+}
 .contacts__item--link {
   align-items: center;
   display: flex;
@@ -59,6 +78,10 @@
   &:focus,
   &:active {
     color: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 .contacts__item--icon {
@@ -80,7 +103,103 @@
     position: absolute;
     background-color: var(--accent-color);
     left: 0;
-    bottom: -32px;
+    bottom: -31px;
     border-radius: 2px;
   }
 }
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.menu-button,
+.menu-button-close {
+  display: block;
+  margin-left: auto;
+  padding-top: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+    
+  }
+}
+.mobile, 
+.mobile-contacts, 
+.mob-soc {
+  padding-left: 40px;
+}
+.mobile__item:not(:last-child) {
+margin-bottom: 32px;
+}
+.mobile-contacts__item--tel {
+  margin-bottom: 32px;
+}
+.mobile-contacts__item--mail {
+  margin-bottom: 64px;
+}
+.menu-svg {
+  .menu-button:hover &,
+  .menu-button:focus &,
+  .menu-button:active & {
+    fill: var(--accent-color);
+  }
+  padding: 0;
+  margin: 0;
+}
+
+.menu-svg-close {
+.menu-button-close:hover &,
+.menu-button-close:focus &,
+.menu-button-close:active & {
+  fill: var(--accent-color);
+}
+}
+.mobile__link {
+  @include text-font(500, 40px, 1.17, 0.02em);
+  color: #212121;
+  text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-contacts-link {
+  @include text-font(500, 24px, 1.16, 0.02em);
+  color: #757575;
+  text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--accent-color);
+    }
+}
+
+.mob-soc {
+  display: flex;
+}
+
+.mob-soc-item {
+  @include text-font(500, 18px, 1.22, 0.02em);
+  color: #2196F3;
+  cursor: pointer;
+  &:not(:last-child) {
+  margin-right: 20px;
+}
+}
+
