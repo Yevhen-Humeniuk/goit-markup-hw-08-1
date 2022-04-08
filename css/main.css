@@ -142,6 +142,7 @@ body {
 }
 
 .navigation__link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
@@ -243,7 +244,6 @@ body {
   position: absolute;
   background-color: var(--accent-color);
   left: 0;
-  bottom: -31px;
   border-radius: 2px;
 }
 
@@ -928,9 +928,6 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-  }
-  .subscribe {
-    width: 358px;
   }
 }
 
