@@ -288,6 +288,11 @@ body {
   padding-left: 40px;
 }
 
+.mob-soc {
+  padding-right: 83px;
+  padding-bottom: 48px;
+}
+
 .mobile__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -765,8 +770,10 @@ body {
   background-color: var(--background-color);
 }
 
-.footer__container {
-  text-align: center;
+@media screen and (max-width: 1200px) {
+  .footer__container {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -781,13 +788,19 @@ body {
 @media screen and (min-width: 1200px) {
   .footer {
     justify-content: space-between;
-    text-align: start;
+    text-align: none;
   }
 }
 
 .footer__adress {
   height: 81px;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__adress {
+    width: 231px;
+  }
 }
 
 .addres {
@@ -855,12 +868,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-socials {
-    margin-left: 70px;
-  }
-}
-
 .network {
   display: flex;
   align-items: center;
@@ -923,8 +930,7 @@ body {
     justify-content: center;
   }
   .subscribe {
-    margin-left: 93px;
-    width: 570px;
+    width: 358px;
   }
 }
 
@@ -953,6 +959,12 @@ body {
 @media screen and (min-width: 480px) {
   .subscribe__input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
   }
 }
 
@@ -1001,8 +1013,14 @@ body {
 
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
 }
 
 .filter__item + .filter__item {
@@ -1039,16 +1057,26 @@ body {
 
 .cards {
   display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin: 0 -15px -30px;
   flex-wrap: wrap;
 }
 
 .cards__item {
   margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc(100% / 3 - 30px);
   transition: color 250ms;
+  padding: 0 15px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .cards__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .cards__link {
