@@ -129,7 +129,6 @@
 .menu-button-close {
   display: block;
   margin-left: auto;
-  padding-top: 10px;
   width: 40px;
   height: 40px;
   border: none;
@@ -155,6 +154,11 @@ margin-bottom: 32px;
 }
 .mobile-contacts__item--mail {
   margin-bottom: 64px;
+}
+.menu-svg,
+.menu-svg-close {
+  width: 40px;
+  height: 40px;
 }
 .menu-svg {
   .menu-button:hover &,
