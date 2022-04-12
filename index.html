@@ -90,10 +90,18 @@
                 </li>
             </ul>
             <ul class="mob-soc">
-            <li class="mob-soc-item"><a class="mob-soc-link">Instagram</a></li>
-            <li class="mob-soc-item"><a class="mob-soc-link">Twitter</a></li>
-            <li class="mob-soc-item"><a class="mob-soc-link">Facebook</a></li>
-            <li class="mob-soc-item"><a class="mob-soc-link">LinkedIn</a></li>
+            <li class="mob-soc-item">
+                <a class="mob-soc-link">Instagram</a>
+            </li>
+            <li class="mob-soc-item">
+                <a class="mob-soc-link">Twitter</a>
+            </li>
+            <li class="mob-soc-item">
+                <a class="mob-soc-link">Facebook</a>
+            </li>
+            <li class="mob-soc-item">
+                <a class="mob-soc-link">LinkedIn</a>
+            </li>
             </div>
             </div>
         </div>
@@ -157,8 +165,15 @@
                     <ul class="production">
                         <li class="production__item">
                             <div class="production__thumb">
-                                <img class="production__img" src="./images/what-we-do-sec/img.jpg" alt="руки печатают на клавиатуре" width="370"
-                    height="294">
+                                <img 
+                                srcset="
+                                ./images/what-we-do-sec/img.jpg 1x, 
+                                ./images/what-we-do-sec/img-2x.jpg 2x"
+                                class="production__img" 
+                                src="./images/what-we-do-sec/img.jpg" 
+                                alt="руки печатают на клавиатуре" 
+                                width="370"
+                                height="294">
                                 <div class="paragraf-container">
                                     <p class="production__posttitle">Десктопные приложения</p>
                                 </div>
@@ -166,9 +181,15 @@
                         </li>
                         <li class="production__item">
                             <div class="production__thumb">
-                            <img class="production__img" src="./images/what-we-do-sec/box2.jpg"
-                        alt="девушка левой рукой держит смартфон,а правой печатает на ноутбуке" width="370"
-                        height="294">
+                            <img 
+                            srcset="
+                            ./images/what-we-do-sec/box2.jpg 1x, 
+                            ./images/what-we-do-sec/box2-2x.jpg 2x"
+                            class="production__img" 
+                            src="./images/what-we-do-sec/box2.jpg"
+                            alt="девушка левой рукой держит смартфон,а правой печатает на ноутбуке" 
+                            width="370"
+                            height="294">
                                 <div class="paragraf-container">
                                     <p class="production__posttitle">Мобильные приложения</p>
                                 </div>
@@ -176,9 +197,15 @@
                         </li>
                         <li class="production__item">
                             <div class="production__thumb">
-                                <img class="production__img" src="./images/what-we-do-sec/img1.jpg"
-                        alt="человек держит планшет в руке, на котором нарисованы соты разных цветов" width="370"
-                        height="294">
+                                <img 
+                                srcset="
+                                ./images/what-we-do-sec/img1.jpg 1x, 
+                                ./images/what-we-do-sec/img1-2x.jpg 2x"
+                                class="production__img" 
+                                src="./images/what-we-do-sec/img1.jpg"
+                                alt="человек держит планшет в руке, на котором нарисованы соты разных цветов" 
+                                width="370"
+                                height="294">
                                 <div class="paragraf-container">
                                     <p class="production__posttitle">Дизайнерские решения</p>
                                 </div>
@@ -193,6 +220,23 @@
                 <h2 class="section__title">Наша команда</h2>
                     <ul class="team">
                         <li class="team__item">
+                            <picture>
+                                <source
+                                srcset="
+                                ./images/our-team/igor/igor-desk-min.jpg 1x, 
+                                ./images/our-team/igor/igor-desk-2x-min.jpg 2x"
+                                media="(min-width: 1200px)" />
+                                <source
+                                srcset="
+                                ./images/our-team/igor/igor-tab-min.jpg 1x, 
+                                ./images/our-team/igor/igor-tab-2x-min.jpg 2x"
+                                media="(min-width: 768px)" />
+                                <source
+                                srcset="
+                                ./images/our-team/igor/igor-mob-min.jpg 1x, 
+                                ./images/our-team/igor/igor-mob-2x-min.jpg 2x"
+                                media="(min-width: 480px)" />
+                            </picture>
                             <img src="./images/our-team/img.jpg" alt="молодой мужчина в очках с бородой" width="270" height="260">
                                 <div class="team__container">
                                     <h3 class="team__title">Игорь Демьяненко</h3>
@@ -230,6 +274,23 @@
                                 </div>
                         </li>
                         <li class="team__item">
+                            <picture>
+                                <source
+                                srcset="
+                                ./images/our-team/olga/olga-desk-min.jpg 1x, 
+                                ./images/our-team/olga/olga-desk-2x-min.jpg 2x"
+                                media="(min-width: 1200px)" />
+                                <source
+                                srcset="
+                                ./images/our-team/olga/olga-tab-min.jpg 1x, 
+                                ./images/our-team/olga/olga-tab-2x-min.jpg 2x"
+                                media="(min-width: 768px)" />
+                                <source
+                                srcset="
+                                ./images/our-team/olga/olga-mob-min.jpg 1x, 
+                                ./images/our-team/olga/olga-mob-2x-min.jpg 2x"
+                                media="(min-width: 480px)" />
+                            </picture>
                             <img src="./images/our-team/img1.jpg" alt="молодаяженщина в очках" width="270" height="260">
                                 <div class="team__container">
                                     <h3 class="team__title">Ольга Репина</h3>
@@ -267,6 +328,23 @@
                                 </div>
                         </li>
                         <li class="team__item">
+                            <picture>
+                                <source
+                                srcset="
+                                ./images/our-team/nikolay/nikolay-desk-min.jpg 1x, 
+                                ./images/our-team/nikolay/nikolay-desk-2x-min.jpg 2x"
+                                media="(min-width: 1200px)" />
+                                <source
+                                srcset="
+                                ./images/our-team/nikolay/nikolay-tab-min.jpg 1x, 
+                                ./images/our-team/nikolay/nikolay-tab-2x-min.jpg 2x"
+                                media="(min-width: 768px)" />
+                                <source
+                                srcset="
+                                ./images/our-team/nikolay/nikolay-mob-min.jpg 1x, 
+                                ./images/our-team/nikolay/nikolay-mob-2x-min.jpg 2x"
+                                media="(min-width: 480px)" />
+                            </picture>
                             <img src="./images/our-team/img2.jpg" alt="улыбчивый молодой мужчина с коротко стриженой бородой"
                         width="270" height="260">
                             <div class="team__container">
@@ -303,6 +381,23 @@
                             </div>
                         </li>
                         <li class="team__item">
+                            <picture>
+                                <source
+                                srcset="
+                                ./images/our-team/mihail/mihail-desk-min.jpg 1x, 
+                                ./images/our-team/mihail/mihail-desk-2x-min.jpg 2x"
+                                media="(min-width: 1200px)" />
+                                <source
+                                srcset="
+                                ./images/our-team/mihail/mihail-tab-min.jpg 1x, 
+                                ./images/our-team/mihail/mihail-tab-2x-min.jpg 2x"
+                                media="(min-width: 768px)" />
+                                <source
+                                srcset="
+                                ./images/our-team/mihail/mihail-mob-min.jpg 1x, 
+                                ./images/our-team/mihail/mihail-mob-2x-min.jpg 2x"
+                                media="(min-width: 480px)" />
+                            </picture>
                             <img src="./images/our-team/img3.jpg" alt="молодой мужчина в очках с бородой" width="270" height="260">
                                 <div class="team__container">
                                     <h3 class="team__title">Михаил Ермаков</h3>
@@ -445,7 +540,7 @@
             </div>
         </div>
     </footer>
-   <!-- modal-->
+<!-- modal-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-btn" data-modal-close><svg class="modal-icon" width="11" height="11">
