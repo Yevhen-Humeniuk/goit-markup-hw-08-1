@@ -7,11 +7,21 @@
   background-color: var(--background-color);
   color: var(--hero-text-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background-Img.png);
+    url(../images/hero-img/hero-img-mob-1x-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-img/hero-img-tab-1x-min.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-img/hero-img-desk-1x-min.jpg);
+  }
 }
+
+
 .hero__title {
   @include text-font(900, 26px, 1.62, 0.06em);
   width: 360px;
