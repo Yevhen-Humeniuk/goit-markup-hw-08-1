@@ -342,6 +342,15 @@ body {
 
 .mobile-contacts-link {
   font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2196F3;
+}
+
+.mail-contacts-link {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
@@ -349,7 +358,7 @@ body {
   text-decoration: none;
 }
 
-.mobile-contacts-link:hover, .mobile-contacts-link:focus, .mobile-contacts-link:active {
+.mail-contacts-link:hover, .mail-contacts-link:focus, .mail-contacts-link:active {
   color: var(--accent-color);
 }
 
