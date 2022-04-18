@@ -2,6 +2,11 @@
   border-bottom: 1px solid #ececec;
   &__container {
     display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 0;
+    }
   }
 }
 .navigation {
@@ -104,7 +109,7 @@
     position: absolute;
     background-color: var(--accent-color);
     left: 0;
-    // bottom: -31px;
+    bottom: 0;
     border-radius: 2px;
   }
 }
@@ -129,13 +134,16 @@
 .menu-button-close {
   display: block;
   margin-left: auto;
-  width: 40px;
   height: 40px;
   border: none;
   @media screen and (min-width: 768px) {
     display: none;
     
   }
+}
+.menu-svg {
+  justify-content: center;
+  align-items: center;
 }
 .mobile, 
 .mobile-contacts, 
