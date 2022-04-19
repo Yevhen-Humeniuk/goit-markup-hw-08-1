@@ -834,6 +834,9 @@ body {
     margin-bottom: 0;
     width: 170px;
   }
+  .customers__item:nth-last-of-type(4) {
+    margin-right: 30px;
+  }
 }
 
 .customers__link {
