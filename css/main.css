@@ -278,8 +278,11 @@ body {
 .menu-button-close {
   display: block;
   margin-left: auto;
+  width: 40px;
   height: 40px;
-  border: none;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -290,8 +293,24 @@ body {
 }
 
 .menu-svg {
-  justify-content: center;
-  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-svg__icon-open {
+  opacity: 1;
+}
+
+.menu-svg__icon-close {
+  opacity: 0;
+}
+
+.menu-button.is-active .menu-svg__icon-open {
+  opacity: 0;
+}
+
+.menu-button-close.is-active .menu-svg__icon-close {
+  opacity: 1;
 }
 
 .mobile,
