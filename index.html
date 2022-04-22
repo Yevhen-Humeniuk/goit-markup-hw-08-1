@@ -55,27 +55,22 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="menu-button" aria-label="кнопка открытия меню">
-          <svg class="menu-svg">
-            <use
-              class="menu-svg__icon-open"
-              href="./images/icons.svg#icon-menu_40px"
-              width="40"
-              height="40"
-            ></use>
-            <use
-              class="menu-svg__icon-close"
-              href="./images/icons.svg#icon-close_40px"
-              width="40"
-              height="40"
-            ></use>
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="Кнопка открытия меню"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use class="menu-btn__icon-open" href="./images/icons.svg#icon-menu_40px"></use>
+            <use class="menu-btn__icon-close" href="./images/icons.svg#icon-close_40px"></use>
           </svg>
         </button>
       </div>
-      <div class="mob-menu">
+      <div class="mob-menu" data-menu>
         <div class="container">
           <div class="mob-menu-top">
-            <button type="button" class="menu-button-close"></button>
             <ul class="mobile">
               <li class="mobile__item">
                 <a href="index.html" class="mobile__link">Студия</a>
@@ -630,7 +625,10 @@
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal-title">
+          Оставьте свои данные, мы вам <br />
+          перезвоним
+        </p>
         <form name="signup-form" class="modal-form" autocomplete="on" novalidate>
           <label class="modal-label">
             Имя
@@ -664,7 +662,12 @@
           </label>
           <label class="modal-label">
             Комментарий
-            <textarea name="feedback" class="modal-textarea" placeholder="Введите текст"></textarea>
+            <textarea
+              name="feedback"
+              class="modal-textarea"
+              placeholder="Введите текст"
+              class="modal-placeholder"
+            ></textarea>
           </label>
           <div class="checkbox-container">
             <input

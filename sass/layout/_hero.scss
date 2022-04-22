@@ -46,6 +46,15 @@
   margin-right: auto;
   margin-bottom: 30px;
   text-transform: uppercase;
+  @media screen and (min-width: 320px) and (max-width: 354px) {
+    @include text-font(900, 20px, 1.62, 0.06em);
+  }
+  @media screen and (min-width: 355px) and (max-width: 386px) {
+    @include text-font(900, 23px, 1.62, 0.06em);
+  }
+  @media screen and (min-width: 352px) and (max-width: 400px) {
+    @include text-font(900, null, 1.62, 0.06em);
+  }
   @media screen and (min-width: 480px) {
     width: 360px;
   }

@@ -57,20 +57,22 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="menu-button">
-          <svg class="menu-svg">
-            <use href="./images/icons.svg#icon-menu_40px" width="40" height="40"></use>
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="Кнопка открытия меню"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use class="menu-btn__icon-open" href="./images/icons.svg#icon-menu_40px"></use>
+            <use class="menu-btn__icon-close" href="./images/icons.svg#icon-close_40px"></use>
           </svg>
         </button>
       </div>
-      <div class="mob-menu is-hidden">
+      <div class="mob-menu" data-menu>
         <div class="container">
           <div class="mob-menu-top">
-            <button type="button" class="menu-button-close">
-              <svg class="menu-svg-close">
-                <use href="./images/icons.svg#icon-close_40px" width="40" height="40"></use>
-              </svg>
-            </button>
             <ul class="mobile">
               <li class="mobile__item">
                 <a href="index.html" class="mobile__link">Студия</a>
@@ -89,7 +91,7 @@
                 <a href="tel:+380961111111" class="mobile-contacts-link">+38 096 111 11 11 </a>
               </li>
               <li class="mobile-contacts__item--mail">
-                <a href="mailto:info@devstudio.com" class="mobile-contacts-link"
+                <a href="mailto:info@devstudio.com" class="mail-contacts-link"
                   >info@devstudio.com
                 </a>
               </li>
