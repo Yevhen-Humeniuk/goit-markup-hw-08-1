@@ -71,12 +71,14 @@
 }
 
 .advantages__title {
-  text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--header-links-title-text-color);
   @include text-font(700, 14px, 1.14, 0.03em);
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .advantages__posttitle {

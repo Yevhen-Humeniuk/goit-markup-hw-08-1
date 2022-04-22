@@ -607,7 +607,6 @@ body {
 }
 
 .advantages__title {
-  text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -616,6 +615,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__title {
+    text-align: center;
+  }
 }
 
 .advantages__posttitle {
