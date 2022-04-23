@@ -2,7 +2,6 @@
   border-bottom: 1px solid #ececec;
   &__container {
     display: flex;
-    padding-top: 16px;
     padding-bottom: 16px;
     @media screen and (min-width: 768px) {
       padding-bottom: 0;
@@ -109,7 +108,7 @@
     position: absolute;
     background-color: var(--accent-color);
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     border-radius: 2px;
   }
 }

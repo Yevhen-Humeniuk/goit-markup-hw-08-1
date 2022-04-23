@@ -119,7 +119,6 @@ body {
 
 .header__container {
   display: flex;
-  padding-top: 16px;
   padding-bottom: 16px;
 }
 
@@ -252,7 +251,7 @@ body {
   position: absolute;
   background-color: var(--accent-color);
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   border-radius: 2px;
 }
 
@@ -1430,6 +1429,12 @@ body {
   fill: var(--accent-color);
 }
 
+.modal-label:focus .modal-form-icon,
+.modal-label:active .modal-form-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--accent-color);
+}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1437,11 +1442,11 @@ body {
 }
 
 .modal-title {
-  font-weight: 700px;
   margin-bottom: 12px;
+  font-weight: 700px;
   font-size: 20px;
   font-weight: bold;
-  line-height: 1.15;
+  line-height: 1.50;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-links-title-text-color);
@@ -1497,6 +1502,7 @@ body {
 
 .modal-check-text {
   font-size: 14px;
+  margin-top: 20px;
   display: flex;
   color: var(--primary-text-color);
   align-items: center;
@@ -1558,11 +1564,17 @@ body {
   border-color: var(--accent-color);
 }
 
+.input-modal-form:focus .modal-form-icon,
+.input-modal-form:active .modal-form-icon {
+  fill: var(--accent-color);
+}
+
 .modal-textarea {
   cursor: pointer;
   position: relative;
   display: block;
   margin-top: 10px;
+  resize: none;
   color: rgba(117, 117, 117, 0.5);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1586,7 +1598,7 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-modal:hover {
+.input-modal:hover, .input-modal:focus, .input-modal:active {
   border-color: var(--accent-color);
 }
 
